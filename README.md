@@ -82,3 +82,11 @@ The Anda framework provides a command-line interface in `anda_cli` for interacti
 Copyright © 2026 [LDC Labs](https://github.com/ldclabs).
 
 `ldclabs/anda` is licensed under the MIT License. See [LICENSE](./LICENSE-MIT) for the full license text.
+
+## FAQ
+
+For frequently asked questions about Anda, see [FAQ.md](FAQ.md).
+
+---
+
+
