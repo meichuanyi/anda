@@ -82,3 +82,105 @@ The Anda framework provides a command-line interface in `anda_cli` for interacti
 Copyright © 2026 [LDC Labs](https://github.com/ldclabs).
 
 `ldclabs/anda` is licensed under the MIT License. See [LICENSE](./LICENSE-MIT) for the full license text.
+
+---
+
+## ❓ FAQ
+
+### What is Anda?
+
+Anda is an AI agent framework built with Rust, featuring ICP blockchain integration and Trusted Execution Environments (TEEs) support. It's designed to create a highly composable, autonomous, and perpetually memorizing network of AI agents.
+
+### How does Anda differ from LangChain or CrewAI?
+
+Anda focuses on **Web3 + AI integration** with unique features:
+- **Rust-native**: High performance and memory safety
+- **ICP blockchain**: Permanent agent identities and cryptographic capabilities
+- **TEE support**: Decentralized Trusted Execution Environment (dTEE) for security
+- **Perpetual Memory**: Agent states stored on ICP blockchain for "immortality"
+
+LangChain/CrewAI are Python frameworks focused on LLM orchestration without blockchain or TEE capabilities.
+
+### What is dTEE (Decentralized TEE)?
+
+dTEE is Anda's trusted execution environment architecture that ensures:
+- **Security**: Agents operate in isolated, encrypted environments
+- **Privacy**: Data and computations are protected from external access
+- **Data Integrity**: Tamper-proof execution and results
+
+### What is Perpetual Memory?
+
+Anda agents store their memory states on the ICP blockchain and within dTEE's trusted storage network, enabling:
+- Continuous algorithm upgrades
+- Knowledge accumulation across sessions
+- Agent "immortality" — indefinite operation even after restarts
+
+### How do Anda agents collaborate?
+
+Anda agents specialize in domain-specific problems and flexibly combine with other agents:
+- Single agents handle simple tasks independently
+- Complex problems trigger multi-agent collaboration
+- Modular design enables dynamic composition
+
+### What is ICPanda DAO?
+
+ICPanda DAO is an SNS DAO on the Internet Computer Protocol (ICP) blockchain that created the Anda framework. It issues the `PANDA` token and explores Web3 + AI integration.
+
+- Website: [https://panda.fans/](https://panda.fans/)
+- ICP SNS: [d7wvo-iiaaa-aaaaq-aacsq-cai](https://dashboard.internetcomputer.org/sns/d7wvo-iiaaa-aaaaq-aacsq-cai)
+
+### How do I get started with Anda?
+
+#### For Non-Developers:
+Use the `anda_cli` command-line interface to interact with the Anda engine server.
+
+#### For Developers:
+1. Clone the repository
+2. Explore `anda_core` for base types and interfaces
+3. Build custom agents using `anda_core` traits
+4. Contribute to `anda_engine` and `anda_engine_server`
+
+### What LLM providers does Anda support?
+
+Anda integrates with LLM providers through its core architecture. Check `anda_core` documentation for specific provider configurations.
+
+### How do I configure TEE environments?
+
+Refer to [IC-TEE](https://github.com/ldclabs/ic-tee) for setting up Trusted Execution Environments with the Internet Computer.
+
+### Can I run Anda locally?
+
+Yes. Anda can run locally for development. For production with full TEE and ICP integration, follow the deployment guides in `anda_engine_server`.
+
+### Where can I find more documentation?
+
+- [Anda Architecture](./docs/architecture.md)
+- [IC-TEE Repository](https://github.com/ldclabs/ic-tee)
+- [IC-COSE Repository](https://github.com/ldclabs/ic-cose)
+
+### How can I contribute?
+
+- Enhance `anda_core` and `anda_engine`
+- Build and share custom agents and tools
+- Improve `anda_engine_server` HTTP implementation
+- Submit issues and pull requests on GitHub
+
+### Troubleshooting
+
+**Issue**: Cannot connect to Anda engine server
+- Check if `anda_engine_server` is running
+- Verify network configuration and ports
+
+**Issue**: TEE environment not working
+- Refer to [IC-TEE](https://github.com/ldclabs/ic-tee) setup guide
+- Ensure proper hardware/software TEE support
+
+**Issue**: ICP blockchain integration failing
+- Verify ICP network connectivity
+- Check ICPanda DAO documentation for network status
+
+### Need more help?
+
+- Open an issue on GitHub
+- Visit [ICPanda DAO website](https://panda.fans/)
+- Check the [documentation](./docs/architecture.md)
